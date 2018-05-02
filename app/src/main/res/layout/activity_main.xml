@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    tools:context="jonathaseloi.inf.ufg.br.cartaovisita.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/ic_background"
+        android:id="@+id/rlTop">
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="140dp"
+            android:id="@+id/ivFoto"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlBottomNome"
+        android:layout_below="@id/rlTop"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strNome"
+            android:id="@+id/tvNome"
+            android:textSize="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlBottomEmail"
+        android:layout_below="@id/rlBottomNome"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ivIconeEmail"
+            android:background="@drawable/ic_email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strEmail"
+            android:id="@+id/tvEmail"
+            android:textSize="18dp"
+            android:layout_toRightOf="@id/ivIconeEmail"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ivIconeEmail"
+            android:layout_marginStart="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlBottomTelefone"
+        android:layout_below="@id/rlBottomEmail"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ivIconeTelefone"
+            android:background="@drawable/ic_telefone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strTelefone"
+            android:id="@+id/tvTelefone"
+            android:textSize="18dp"
+            android:layout_toRightOf="@id/ivIconeTelefone"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ivIconeTelefone"
+            android:layout_marginStart="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlBottomFacebook"
+        android:layout_below="@id/rlBottomTelefone"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ivIconeFacebook"
+            android:background="@drawable/ic_facebook"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strFacebook"
+            android:id="@+id/tvFacebook"
+            android:textSize="18dp"
+            android:layout_toRightOf="@id/ivIconeFacebook"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ivIconeFacebook"
+            android:layout_marginStart="10dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
